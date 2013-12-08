@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/die3"
+        android:layout_width="44dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="number" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/die1"
+        android:layout_width="44dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/die3"
+        android:layout_alignBottom="@+id/die3"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/die2"
+        android:layout_width="44dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/die1"
+        android:layout_alignBottom="@+id/die1"
+        android:layout_marginLeft="24dp"
+        android:layout_toRightOf="@+id/die1"
+        android:ems="10"
+        android:inputType="number" />
+
+    <ToggleButton
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/die1"
+        android:layout_marginTop="85dp"
+        android:textOff="@string/keep"
+        android:textOn="@string/keep" />
+
+    <ToggleButton
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:textOff="@string/keep"
+        android:textOn="@string/keep" />
+
+    <ToggleButton
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button3"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_alignParentRight="true"
+        android:textOff="@string/keep"
+        android:textOn="@string/keep" />
+
+    <ToggleButton
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/die2"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/button1"
+        android:textOff="@string/keep"
+        android:textOn="@string/keep" />
+
+    <ToggleButton
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_toLeftOf="@+id/button5"
+        android:textOff="@string/keep"
+        android:textOn="@string/keep" />
+
+    <Button
+        android:id="@+id/rollButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp"
+        android:text="@string/rolldice" />
+
+    <EditText
+        android:id="@+id/die4"
+        android:layout_width="44dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button2"
+        android:layout_alignRight="@+id/button4"
+        android:ems="10"
+        android:inputType="number" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/die5"
+        android:layout_width="44dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/die4"
+        android:layout_alignBottom="@+id/die4"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/totScoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rollButton"
+        android:layout_marginTop="27dp"
+        android:layout_toRightOf="@+id/die1"
+        android:text="@string/totalScore"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/oppScoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/totScoreText"
+        android:layout_below="@+id/totScoreText"
+        android:text="@string/opp_total_score"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/totalScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/totScoreText"
+        android:layout_alignBottom="@+id/totScoreText"
+        android:layout_toLeftOf="@+id/button5"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/oppScoreTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/oppScoreText"
+        android:layout_alignBottom="@+id/oppScoreText"
+        android:layout_toLeftOf="@+id/button5"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

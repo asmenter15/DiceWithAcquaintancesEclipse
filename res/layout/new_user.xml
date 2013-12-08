@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <requestFocus />
+
+    <TextView
+        android:id="@+id/usernameText"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/username"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/usernameEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usernameText"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/firstname"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usernameEdit"
+        android:layout_centerHorizontal="true"
+        android:text="@string/first_name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/firstNameEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/usernameEdit"
+        android:layout_below="@+id/firstname"
+        android:ems="10"
+        android:hint="@string/first_name"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/lastNameText"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstNameEnter"
+        android:layout_centerHorizontal="true"
+        android:text="@string/last_name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/lastNameEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/firstNameEnter"
+        android:layout_below="@+id/lastNameText"
+        android:ems="10"
+        android:hint="@string/last_name"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_marginTop="10dp"        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lastNameEnter"
+        android:layout_centerHorizontal="true"
+        android:text="@string/email_text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lastNameEnter"
+        android:layout_below="@+id/emailText"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_marginTop="10dp"        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_centerHorizontal="true"
+        android:text="@string/password"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/passwordAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/email"
+        android:layout_below="@+id/password"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/addUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:text="@string/add_user" />
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp" >
+
+        <RadioButton
+            android:id="@+id/singlePlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/single_player" />
+
+        <RadioButton
+            android:id="@+id/multiPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/multi_player" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/gameNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:text="@string/game_name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/gameName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/gameNameText"
+        android:layout_alignBottom="@+id/gameNameText"
+        android:layout_alignRight="@+id/createGame"
+        android:layout_toRightOf="@+id/gameNameText"
+        android:inputType="text"
+        android:maxLength="15" />
+
+    <requestFocus />
+
+    <TextView
+        android:id="@+id/opponentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_marginTop="39dp"
+        android:text="@string/opponent_text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <AutoCompleteTextView
+        android:id="@+id/findUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/opponentText"
+        android:layout_alignBottom="@+id/opponentText"
+        android:layout_toRightOf="@+id/opponentText"
+        android:ems="10"
+        android:hint="@string/type_username"
+        android:singleLine="true"
+        android:imeOptions="actionDone" />
+
+    <Button
+        android:id="@+id/createGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:minHeight="70dip"
+        android:text="@string/create_game" />
+
+</RelativeLayout>

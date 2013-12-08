@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/gameName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="GameName" />
+
+    <TextView
+        android:id="@+id/urScoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/vsView"
+        android:text="Your score: " />
+
+    <TextView
+        android:id="@+id/theirScoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/urScoreText"
+        android:text="Their score: " />
+
+    <TextView
+        android:id="@+id/myScore1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/urScoreText"
+        android:layout_alignBottom="@+id/urScoreText"
+        android:layout_toRightOf="@+id/urScoreText"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/theirScore1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/myScore1"
+        android:layout_below="@+id/myScore1"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/vsView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/gameName1"
+        android:text="VS." />
+
+    <TextView
+        android:id="@+id/opponent1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/urScoreText"
+        android:layout_toRightOf="@+id/vsView"
+        android:text="TextView" />
+
+</RelativeLayout>
